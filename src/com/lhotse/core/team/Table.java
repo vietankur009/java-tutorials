@@ -7,7 +7,7 @@ public class Table {
 
             for(int j = 1; j<=10;j++ ) {
                 int x  = (n*j);
-                System.out.print(x +" ");
+                System.out.print(n+" "+"*"+" "+j+" "+"="+" "+ n*j+"  ");
             }
             n = n+1;
             System.out.println(" ");
