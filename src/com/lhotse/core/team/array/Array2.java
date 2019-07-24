@@ -1,5 +1,8 @@
 package com.lhotse.core.team.array;
 
+/**
+ * This method will print the array element one by one .
+ */
 public class Array2 {
     public static void main(String[] args) {
         ar2();
