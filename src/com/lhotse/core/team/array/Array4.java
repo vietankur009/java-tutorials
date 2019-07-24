@@ -1,4 +1,4 @@
-/*
+
 package com.lhotse.core.team.array;
 
 public class Array4 {
@@ -9,8 +9,8 @@ public class Array4 {
     public static void ar4() {
         int[] i = new int[]{40, 70, 10, 50, 20};
 
-        for (int j = 0; j < i.length - 1; j++) {
-            int x = i[j];
+        for (int j = 0; j < i.length ; j++) {
+            int x = i[0];
             int y = i[j + 1];
 
             if (i[j + 1] > i[j]) {
@@ -24,4 +24,4 @@ public class Array4 {
 
     }
 }
-*/
+
