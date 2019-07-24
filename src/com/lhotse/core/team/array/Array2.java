@@ -1,26 +1,19 @@
 package com.lhotse.core.team.array;
 
-public class Array1 {
+public class Array2 {
     public static void main(String[] args) {
-        ar1();
+        ar2();
     }
 
-    public static void ar1() {
+    public static void ar2() {
         int[] i = new int[5];
         i[0] = 40;
         i[1] = 70;
         i[2] = 10;
         i[3] = 50;
         i[4] = 20;
-        for (int j = 0; j < i.length; j++) {
+        for (int j = 4; j < i.length && j>=0; j--) {
             System.out.print(i[j] + " ");
-            if(i[j]>i[0]){
-                System.out.print("");
-            }
         }
-
-
     }
 }
-
-
