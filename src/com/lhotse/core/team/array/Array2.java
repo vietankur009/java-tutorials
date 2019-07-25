@@ -5,17 +5,21 @@ package com.lhotse.core.team.array;
  */
 public class Array2 {
     public static void main(String[] args) {
-        reverse();
-        byswap();
+        int[] i = new int[]{40, 70, 10, 50, 20};
+        int[] m = new int[]{100, 70, 136, 50, 28};
+        int[] t = new int[]{100, 70, 15, 40, 28};
+        reverse(i);
+        byswap1(m);
+        byswap2(t);
     }
 
-    public static void reverse() {
-        int[] i = new int[]{40, 70, 10, 50, 20};
+    public static void reverse(int[] x) {
+
         int[] ar = new int[5];
 
         int n = 0;
-        for (int j = 4; j < i.length && j >= 0; j--) {
-            ar[n] = i[j];
+        for (int j = 4; j < x.length && j >= 0; j--) {
+            ar[n] = x[j];
             n++;
         }
 
@@ -28,18 +32,34 @@ public class Array2 {
     }
 
 
-    public static void byswap() {
-        int[] m = new int[]{100, 70, 136, 50,28};
-        int c = m.length-1;
-        for(int n = m.length -1; n < m.length && n >= 0; n--){
-            int temp = m[n];
-            m[n] = m[n-c];
-            m[n-c] = temp;
-            c= c-2;
+    public static void byswap1(int[] z) {
+
+        int l = z.length;
+        for (int n = l - 1; n > l / 2; n--) {
+            int temp = z[l - n - 1];
+            z[l - n - 1] = z[n];
+            z[n] = temp;
         }
 
-        for (int r = 0; r < m.length; r++) {
-            System.out.print(m[r] + " ");
+        for (int r = 0; r < z.length; r++) {
+            System.out.print(z[r] + " ");
+        }
+
+        System.out.println(" ");
+    }
+
+
+    public static void byswap2(int[] v) {
+
+        int l = v.length;
+        for (int n = 0; n < l / 2; n++) {
+            int temp = v[n];
+            v[n] = v[l - n - 1];
+            v[l - n - 1] = temp;
+        }
+
+        for (int r = 0; r < v.length; r++) {
+            System.out.print(v[r] + " ");
         }
     }
 }
