@@ -1,7 +1,7 @@
 package com.lhotse.core.team.array;
 
 /**
- * This method will print the array element one by one .
+ * This method will print the array element one by one but in reverse order.
  */
 public class Array2 {
     public static void main(String[] args) {
