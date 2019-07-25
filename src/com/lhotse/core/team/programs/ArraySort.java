@@ -1,7 +1,7 @@
 package com.lhotse.core.team.programs;
 
 /**
- * Created by Lhotse Team on 7/24/2019.
+ * Not done this programs.
  */
 public class ArraySort {
     public static void main(String... arg){
