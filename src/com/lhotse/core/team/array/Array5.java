@@ -8,11 +8,11 @@ public class Array5 {
     public static void sort() {
         try {
             int[] ar = new int[]{10,38,50};
+            System.out.println(ar[-4]);
 
 
-
-        }catch (ArrayIndexOutOfBoundsException e){
-            System.out.println(e.getMessage());
+        }catch (Exception e){
+            System.out.println("Your index is wrong and if you call method e.getMessage then it will print the wrong index.");
         }finally {
             System.out.println("do not worry");
         }
