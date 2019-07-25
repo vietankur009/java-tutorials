@@ -7,20 +7,22 @@ public class Array4 {
     }
 
     public static void ar4() {
-        int[] i = new int[]{40, 70, 10, 50, 20};
+        int[] a = new int[]{10, 1, 12, 5, 6};
+        int largest = a[0];
+        int secLarge = a[4];
+        for (int j = 1; j < a.length; j++) {
 
-        for (int j = 0; j < i.length ; j++) {
-            int x = i[0];
-            int y = i[j + 1];
-
-            if (i[j + 1] > i[j]) {
-                x = i[j];
-                y = i[j + 1];
+            if (a[j] > largest) {
+                largest = a[j];
             }
-            System.out.print(x);
         }
-        //System.out.println(" ");
-        //System.out.print(x);
+        for (int i = 0;i<a.length -1;i++){
+            if (a[i] < largest&& a[i] >a[4]){
+                secLarge = a[i];
+            }
+        }
+        System.out.println(largest);
+        System.out.println(secLarge);
 
     }
 }
