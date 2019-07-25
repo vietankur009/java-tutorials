@@ -25,10 +25,16 @@ public class Array4 {
         /**
          * This loop will print the second largest number.
          */
-        for (int i = 0;i<a.length -1;i++){
-            if (a[i] < largest&& a[i] >a[4]){
-                secLarge = a[i];
+        try {
+            for (int i = 0; i < a.length - 1; i++) {
+                if (a[i] < largest && a[i] > a[4]) {
+                    secLarge = a[i];
+                }
             }
+        } catch (ArrayIndexOutOfBoundsException i) {
+            System.out.println("You have take index larger than the array index");
+        } finally {
+            System.out.println("No tension,Exception is here.");
         }
         System.out.println(largest);
         System.out.println(secLarge);
