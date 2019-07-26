@@ -5,14 +5,15 @@ package com.lhotse.core.team.array;
  */
 public class Swap {
     public static void main(String[] args){
-        swapping(4,5);
+        swapping1(4,5);
+        swapping2(4,5);
     }
 
     /**
      * @param a It is the first number .
      * @param b It is the second number.
      */
-    public static void swapping(int a , int b){
+    public static void swapping1(int a , int b){
         int x = a;
         int y = b;
         int z ;
@@ -20,7 +21,15 @@ public class Swap {
         y = x;
         x =z;
 
-        System.out.print(x + " " + y);
+        System.out.println(x + " " + y);
+    }
 
+    public static void swapping2(int m , int n){
+        int x = m;
+        int y = n;
+
+        x = x+y;
+        y = x-y;
+        System.out.println((x-y) + " " + y);
     }
 }
