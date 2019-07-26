@@ -1,5 +1,8 @@
 package com.lhotse.core.team.array;
 
+/**
+ * This program will sort the array.
+ */
 public class Array5 {
     public static void main(String[] args) {
 
@@ -22,7 +25,9 @@ public class Array5 {
                 ar1[index] = 99;
                 ar2[i] = smallest;
             }
-
+            /**
+             * It will print the final sort array .
+             */
             for (int t = 0; t < ar2.length; t++) {
                 System.out.print(ar2[t] + " ");
             }
