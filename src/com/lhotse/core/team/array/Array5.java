@@ -24,13 +24,15 @@ public class Array5 {
                 //System.out.println(smallest);
                 ar1[index] = 99;
                 ar2[i] = smallest;
+                System.out.print(ar2[i] + " ");
+
             }
             /**
              * It will print the final sort array .
              */
-            for (int t = 0; t < ar2.length; t++) {
+            /*for (int t = 0; t < ar2.length; t++) {
                 System.out.print(ar2[t] + " ");
-            }
+            }*/
 
             /*System.out.println(" ");
             for (int t = 0; t < ar1.length; t++) {
