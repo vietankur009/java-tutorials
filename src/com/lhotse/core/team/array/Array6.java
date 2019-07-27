@@ -9,16 +9,15 @@ public class Array6 {
             for (int j = 1; j < i.length; j++) {
                 if (i[j] < smallest) {
                     smallest = i[j];
-
+                    int temp = i[index];
+                    i[index] = smallest;
+                    i[j] = temp;
                 }
-                index = j;
-                int temp = i[index];
-                i[index] = smallest;
-                i[j] = temp;
-               // index++;
+                index++;
             }
         }
-        //System.out.print(smallest);
+
+
         for (int r = 0; r < i.length; r++) {
             System.out.print(i[r] + " ");
         }
