@@ -1,7 +1,7 @@
 package com.lhotse.core.team.array;
 
 /**
- * This program will sort the array.
+ * This program will sort the array using another array.
  */
 public class Array5 {
     public static void main(String[] args) {
