@@ -4,22 +4,19 @@ public class Array6 {
     public static void main(String[] args) {
         int[] i = new int[]{4, 3, 2, 10, 12, 1, 5, 6};
         for (int m = 0; m < i.length; m++) {
-            int smallest = i[0];
-            int index = 0;
-            for (int j = 1; j < i.length; j++) {
-                if (i[j] < smallest) {
+            int smallest = i[m];
+            int index = m;
+            for (int j = m + 1; j < i.length; ++j) {
+                if (smallest > i[j]) {
                     smallest = i[j];
-                    int temp = i[index];
-                    i[index] = smallest;
-                    i[j] = temp;
+                    index = j;
                 }
-                index++;
             }
-        }
 
-
-        for (int r = 0; r < i.length; r++) {
-            System.out.print(i[r] + " ");
+            int temp = i[m];
+            i[m] = i[index];
+            i[index] = temp;
+            System.out.print(i[m] + " ");
         }
     }
 }
