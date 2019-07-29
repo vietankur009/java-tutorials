@@ -1,25 +1,27 @@
 package com.lhotse.core.team.array;
 
+/**
+ * This program will sort array using insertion algorithm.
+ */
 public class InsertionSort {
     public static void main(String[] args) {
         int[] ar = new int[]{4, 3, 2, 10, 12, 1, 5, 6};
         for (int m = 1; m < ar.length; m++) {
             //int index = m;
             //int a = ar[m];
-            for (int j = m; j >0; j--) {
-                if (ar[j-1] > ar[j]) {
-                    int temp = ar[j-1];
-                    ar[j-1] = ar[j];
+            for (int j = m; j > 0; j--) {
+                if (ar[j - 1] > ar[j]) {
+                    int temp = ar[j - 1];
+                    ar[j - 1] = ar[j];
                     ar[j] = temp;
-
                 } else {
                     break;
                 }
             }
         }
 
-        for(int k = 0;k<ar.length;k++){
-            System.out.print(ar[k]+" ");
+        for (int k = 0; k < ar.length; k++) {
+            System.out.print(ar[k] + " ");
         }
 
        /* for(int i=0;i<a.length;i++)
