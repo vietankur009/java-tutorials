@@ -1,9 +1,10 @@
 package com.lhotse.core.team.array;
 
 /**
- * This will sort array without using another array.
+ * This will sort array without using another array by finding the smallest element index and then swap that element with the
+ * first element and soon.
  */
-public class Array6 {
+public class Sorting2 {
     public static void main(String[] args) {
         int[] i = new int[]{4, 3, 2, 10, 12, 1, 5, 6};
         for (int m = 0; m < i.length; m++) {

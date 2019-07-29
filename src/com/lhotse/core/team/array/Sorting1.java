@@ -1,9 +1,9 @@
 package com.lhotse.core.team.array;
 
 /**
- * This program will sort the array using another array.
+ * This program will sort the array by putting sort values into another array.
  */
-public class Array5 {
+public class Sorting1 {
     public static void main(String[] args) {
 
         try {
