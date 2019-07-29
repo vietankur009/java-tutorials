@@ -1,8 +1,5 @@
 package com.lhotse.core.team.programs2;
 
-/**
- * Created by Lhotse Team on 7/28/2019.
- */
 public class Test implements InterfacePrograms {
 
     public void add(){
