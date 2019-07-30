@@ -11,7 +11,7 @@ public class Array4 {
     }
 
     public static void lar() {
-        int[] m = new int[]{100, 70, 136, 50, 28};
+        int[] m = {100, 70, 136, 50, 28};
         int lnum = 0, slnum = 0;
 
         for(int i=0;i<m.length;i++){
