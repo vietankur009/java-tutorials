@@ -11,12 +11,10 @@ public class Counting {
                 int e = a[i];
                 int count = 1;
                 for (int j = i+1;j<a.length ;j++){
-                    //if(a[j] != -1){
-                        if(a[i] == a[j] && a[j] != -1){
-                            count = count +1;
-                            a[j] = -1;
-                        }
-                    //}
+                    if(a[i] == a[j] && a[j] != -1){
+                        count = count +1;
+                        a[j] = -1;
+                    }
                 }
                 System.out.println("element" +" "+ e +" " +"value"+" " + count);
             }
