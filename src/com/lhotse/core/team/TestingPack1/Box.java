@@ -9,5 +9,9 @@ public class Box {
         this.size = size;
     }
 
-    private int size = 5;
-}
+    private int size;
+
+    /*public String toString() {
+        return "size : "+size;
+    }
+*/}
