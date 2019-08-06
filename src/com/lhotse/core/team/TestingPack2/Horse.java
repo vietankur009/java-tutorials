@@ -1,14 +1,16 @@
 package com.lhotse.core.team.TestingPack2;
 
 public class Horse extends Animal {
-    public void eat() {
+    public static void eat() {
         System.out.println("Horse");
-        super.eat();
+        //super.eat();
     }
     public void buck() { }
 
     public static void main(String[] arg){
         Animal a = new Horse();
+        Horse h = new Horse();
         a.eat();
+        h.eat();
     }
 }
