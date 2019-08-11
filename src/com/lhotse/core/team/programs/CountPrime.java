@@ -3,15 +3,24 @@ package com.lhotse.core.team.programs;
 public class CountPrime {
     static int countInRange(int input1,int input2){
         int count = 0;
-        for(int i = input1;i>=input1 && i<=input2;i++){
-            if(input2%i ==0 )
-                count++;
+        int j;
+        for( j = input1;j<=input2;j++) {
+            for (int i = 2; i <= j ; i++) {
+                if (j % i == 0 ) {
+                    count =0;
+                    break;
+                }else{
+                    count =1;
+                }
+            }
+            if(count ==1)
+                System.out.println(j);
         }
-        return count;
+        return j;
     }
 
     public static void main(String[] arg){
-        int x = countInRange(1,4);
+        int x = countInRange(3,10);
         System.out.println(x);
     }
 }
