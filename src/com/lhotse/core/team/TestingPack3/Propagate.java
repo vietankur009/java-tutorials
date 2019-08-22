@@ -4,6 +4,9 @@ public class Propagate {
 
     static String revS = "";
     static String reverse(String input){
+        if(input == "0"){
+
+        }
         for(int i = input.length()-1;i>=0;i--){
             revS = revS + input.charAt(i);
         }
@@ -14,10 +17,10 @@ public class Propagate {
         String x = reverse("how are you");
         System.out.print(x);
 
-        /*Propagate p1 = new Propagate();
+       /* Propagate p1 = new Propagate();
         Propagate p2 = new Propagate();
 
-        if(p1 instanceof Object){
+        if(!p1.equals(p2)){
             System.out.println("yes");
         }*/
 
