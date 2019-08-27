@@ -1,27 +1,31 @@
 package com.lhotse.core.team.programs;
 
 public class NthPrime {
-    public static int nPrime(int input1){
-        int []ar = new int[input1];
-        int x =0;
+    public static int nPrime(int input1) {
         int c = 0;
-        for (int n = 1;n<=1000;n++){
-            for(int j = 2;j<1000;j++){
-                if(n%j==0){
+        int num = 0;
+        for (int i = 2; i < 1000; i++) {
+            if (i / 2 < 2) {
+                c++;
+            }
+            for (int j = 2; j <= i / 2; j++) {
+                if (i % j == 0) {
+                    break;
+                }
+                if (j == i / 2) {
                     c++;
                 }
             }
-            if(c==0){
-                ar[x] =n;
-                x++;
+            if(c==input1){
+                num = i;
+                break;
             }
         }
-
-        return ar[input1-1];
+        return num;
     }
 
-    public static void main(String[] arg){
-        int s = nPrime(4);
+    public static void main(String[] arg) {
+        int s = nPrime(5);
         System.out.println(s);
     }
 

@@ -1,26 +1,26 @@
 package com.lhotse.core.team.programs;
 
 public class CountPrime {
-    static int countInRange(int input1,int input2){
+    static int countInRange(int input1, int input2) {
         int count = 0;
-        int j;
-        for( j = input1;j<=input2;j++) {
-            for (int i = 2; i <= j ; i++) {
-                if (j % i == 0 ) {
-                    count =0;
+        for (int j = input1; j <= input2; j++) {
+            if (j / 2 < 2) {
+                count++;
+            }
+            for (int i = 2; i <= j / 2; i++) {
+                if (j % i == 0) {
                     break;
-                }else{
-                    count =1;
+                }
+                if (i == j / 2) {
+                    count++;
                 }
             }
-            if(count ==1)
-                System.out.println(j);
         }
-        return j;
+        return count;
     }
 
-    public static void main(String[] arg){
-        int x = countInRange(3,10);
+    public static void main(String[] arg) {
+        int x = countInRange(2, 10);
         System.out.println(x);
     }
 }
