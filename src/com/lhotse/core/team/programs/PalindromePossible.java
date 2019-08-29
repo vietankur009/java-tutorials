@@ -1,39 +1,56 @@
 package com.lhotse.core.team.programs;
 
-
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class PalindromePossible {
-    private static int palPop(String input) {
-        int count = 0;
-        String [] ar = input.split("");
-        Map<String,Integer> mp = new HashMap<>();
-        for(int i =0;i<ar.length;i++){
-            Integer keyValue = mp.put(ar[i],1);
+    int count;
+    private static int fillMapWithKeys(String input){
+        String[] ar = input.split("");
+        Map<String, Integer> mp = new HashMap<>();
+        for (int i = 0; i < ar.length; i++){
+            Integer keyValue = mp.put(ar[i], 1);
             //System.out.println(keyValue);
-            if(keyValue != null){
-                Integer newV = keyValue +1;
-                mp.put(ar[i],newV);
+            if (keyValue != null){
+                Integer newV = keyValue + 1;
+                mp.put(ar[i], newV);
             }
         }
-        System.out.println(mp.keySet());
 
-        if(mp.size() == (ar.length/2+1))
-            count = 2;
-        else if (mp.size() ==1)
-            count = 2;
-        else
-            count =1;
+        if(mp.size()==1){
+            checkSizeForOneKey(mp.keySet());
+        }else if((input.length()) /2 ==0 ){
+            if((input.length()==2)) {
+                processEvenLengthNumber(mp.keySet(), input);
+            }else if(input.length()==4){
 
-        if(count==2)
-            return 2;
-        else
-            return 1;
+            }
+        }
+        //else if(){
+
+        //}
+        return 2;
     }
 
-    public static void main(String[] arg) {
-        int x = palPop("23000");
+    public static int checkSizeForOneKey(Set<String> x){
+        if(x.size()==1){
+            System.out.println("Number is Palindrome");
+        }
+        return 2;
+    }
+
+    public static int processEvenLengthNumber(Set<String> y,String z){
+        if(y.size()==z.length()/2){
+            System.out.println("Number is Palindrome");
+        }
+        return 2;
+    }
+
+    /*public static int forLoop(){
+
+    }*/
+
+    public static void main(String[] arg){
+        int x = fillMapWithKeys("23000");
         System.out.println(x);
     }
 }
