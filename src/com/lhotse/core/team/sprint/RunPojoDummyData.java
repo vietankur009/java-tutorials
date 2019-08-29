@@ -62,11 +62,31 @@ public class RunPojoDummyData {
         i.setEmail("i@gmail.com");
 
         PojoDummyData j = new PojoDummyData();
-        j.setName("jojo10");
-        j.setAddress("xyz10");
+        j.setName("jojo0");
+        j.setAddress("xyz0");
         j.setPhone("8888888810");
         j.setEmail("j@gmail.com");
 
+
+        List<PojoDummyData> mn = new ArrayList<>();
+        mn.add(a);
+        mn.add(b);
+        mn.add(c);
+        mn.add(d);
+        mn.add(e);
+        mn.add(f);
+        mn.add(g);
+        mn.add(h);
+        mn.add(i);
+        mn.add(j);
+
+        //System.out.println(mn);
+        System.out.println("Name  " +" Address" + "     Phone  " + "     Email  " + "\t");
+        Iterator<PojoDummyData> Itr = mn.iterator();
+        while (Itr.hasNext()) {
+            PojoDummyData man = Itr.next();
+            System.out.println(man.getName() +"   "+man.getAddress() + "    " + man.getPhone() + "   " + man.getEmail() + "\t");
+        }
     }
 }
 
