@@ -1,10 +1,18 @@
 package com.lhotse.core.team.sprint;
 
 public class PojoDummyData {
-    private int phone ;
+    private String phone ;
     private String name ;
     private String email ;
     private String address ;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     public String getName() {
         return name;
@@ -28,14 +36,6 @@ public class PojoDummyData {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public int getPhone() {
-        return phone;
-    }
-
-    public void setPhone(int phone) {
-        this.phone = phone;
     }
 
     public String toString(){
