@@ -39,5 +39,7 @@ public class PojoDummyData {
         this.phone = phone;
     }
 
-
+    public String toString(){
+        return "Name :"+ name+", Address : " + address+", Phone : " + phone + ", Email : " + email;
+    }
 }
