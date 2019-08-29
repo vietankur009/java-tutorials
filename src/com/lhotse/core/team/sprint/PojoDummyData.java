@@ -3,6 +3,8 @@ package com.lhotse.core.team.sprint;
 public class PojoDummyData {
     private int phone ;
     private String name ;
+    private String email ;
+    private String address ;
 
     public String getName() {
         return name;
@@ -27,9 +29,6 @@ public class PojoDummyData {
     public void setAddress(String address) {
         this.address = address;
     }
-
-    private String email ;
-    private String address ;
 
     public int getPhone() {
         return phone;
