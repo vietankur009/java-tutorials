@@ -45,7 +45,7 @@ public class PalindromePossible {
         return 2;
     }
 
-    /*public static int forLoop(){
+    /*public static int (){
 
     }*/
 
