@@ -15,13 +15,17 @@ public class ComparatorDemo {
         li.add(new Peoplerator("yoohh", "syeraa", 679894775, 83));
         li.add(new Peoplerator("joegg", "venkatesgg", 489894775, 53));
 
-        System.out.println(li);
+        //System.out.println(li);
         //Collections.sort(li, new SortByFname());
         //Collections.sort(li, new SortByLname());
         //Collections.sort(li, new SortByPhone());
-        Collections.sort(li, new SortByAge());
-        for(Peoplerator p : li) {
+        //Collections.sort(li, new SortByAge());
+
+        Collections.sort(li, (p7,p8) -> new Integer(p7.getAge()).compareTo(new Integer(p8.getAge())));
+        //System.out.println(li);
+        /*for(Peoplerator p : li) {
             System.out.println(p);
-        }
+        }*/
+        li.forEach(System.out::println);
     }
 }

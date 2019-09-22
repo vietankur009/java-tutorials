@@ -2,6 +2,7 @@ package com.lhotse.core.team.ArrayListArray;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ListToArray {
@@ -18,10 +19,23 @@ public class ListToArray {
         for(Object s: o){
             System.out.println(s);
         }*/
-        String [] s = new String[6];
-        s = al.toArray(s);
-        for(String a : s){
+
+
+        String [] st = new String[6];
+        st = al.toArray(st);
+        /*for(String a : st){
             System.out.println(a);
-        }
+        }*/
+
+        Object[] as = al.toArray();
+        System.out.println(as);
+
+        /*String [] s = new String[6];
+        s = al.toArray(s);*/
+        /*Arrays.sort(s);
+        System.out.println(Arrays.toString(s));*/
+        /*for(String a : s){
+            System.out.println(a);
+        }*/
     }
 }
