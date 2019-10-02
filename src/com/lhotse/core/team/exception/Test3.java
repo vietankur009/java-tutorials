@@ -5,6 +5,7 @@ public class Test3 {
         main(1);
         char x = main('v');
         System.out.println(x);
+
     }
 
     public static void main(int i){

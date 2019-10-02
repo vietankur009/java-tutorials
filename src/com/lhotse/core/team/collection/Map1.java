@@ -29,8 +29,10 @@ public class Map1 {
         boolean g = mp.replace(4,93,90);
         //System.out.println(g);
         Collection<Integer> c = mp.values();
-        System.out.println(c);
+        //System.out.println(c);
         Set b1 = mp.entrySet();
-        System.out.println(b1);
+        //System.out.println(b1);
+        Set<Map.Entry<Integer,Integer>> e = mp.entrySet();
+        e.forEach(p-> System.out.println(p));
     }
 }
